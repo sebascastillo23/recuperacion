@@ -27,6 +27,14 @@
     background-color: #4CAF50;
     color: white;
 }
+.imagen:hover{
+border-radius:50%;
+-webkit-border-radius:50%;
+box-shadow: 0px 0px 15px 15px #ec731e;
+-webkit-box-shadow: 0px 0px 15px 15px #ec731e;
+transform: rotate(360deg);
+-webkit-transform: rotate(360deg);
+}
 </style>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/paho-mqtt/1.0.1/mqttws31.js" type="text/javascript"></script>
 <script src="/static/js/index.js"></script>
@@ -34,7 +42,7 @@
 </head>
 <body>
 <h1>Embebidos</h1>
-<img src="/static/images/iot.png" alt="user">
+<img src="/static/images/iot.png" alt="user" class="imagen">
 <br>
 <button id="mostrar1" onclick="mostrard()" class="button button1">Mostrar Historial 1</button>
 <button id="mostrar2" onclick="mostrard2()" class="button button1">Mostrar Historial 2</button>
